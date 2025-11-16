@@ -30,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <meta name="google-site-verification" content="A4XgTP8Eqg63C3DnTzsm_9CHXGSCo9E0l6ED76fyRQk" />
+      
       </head>
       <body>
         <AuthProvider>

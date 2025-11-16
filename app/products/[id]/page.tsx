@@ -3,6 +3,7 @@ import { getProduct } from "@/firebase/products";
 import Image from "next/image";
 import Link from "next/link";
 import AdminEditButton from "@/components/AdminEditButton";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 interface ProductDetailPageProps {
   params: Promise<{ id: string }>;
@@ -81,6 +82,9 @@ export default async function ProductDetailPage({
                 <p className="text-gray-700 leading-relaxed text-lg">
                   {product.description}
                 </p>
+              </div>
+              <div className="mb-8">
+                <WhatsAppButton product={product} />
               </div>
               <div className="pt-6 border-t border-gray-200">
                 <AdminEditButton productId={product.id} />
